@@ -1,4 +1,8 @@
 package com.example.helloWorld.Leetcode.Medium;
+
+import java.util.ArrayList;
+import java.util.List;
+
 //https://leetcode.com/problems/triangle/ Q.120
 public class Triangle {
     public int minimumTotal(List<List<Integer>> list) {
