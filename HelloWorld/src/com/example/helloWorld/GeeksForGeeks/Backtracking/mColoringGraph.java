@@ -4,11 +4,11 @@ public class mColoringGraph {
     public static void main(String[] args) {
         boolean[][] graph = {
                 { false, true, true, true },
-                { true, false, true, false },
+                { true, false, true, true },
                 { true, true, false, true },
-                { true, false, true, false },
+                { true, true, true, false },
         };
-        int m = 3; // Number of colors
+        int m = 4; // Number of colors
         int[] ans = new int[graph.length];
         for(int i=0;i<graph.length;i++)
             ans[i]=0;
@@ -25,12 +25,9 @@ public class mColoringGraph {
 
     private static boolean graphColoringUtil(boolean[][] graph, int m, int size, int[] ans, int curr) {
         if(curr==size){
-            if(isSafe(graph, ans)){
-                return true;
-            }
-            return false;
+            return isSafe(graph, ans);
         }
-        for(int i=1;i<size;i++){
+        for(int i=1;i<=m;i++){
             ans[curr]=i;
             if(graphColoringUtil(graph, m, size, ans, curr+1))
                 return true;
