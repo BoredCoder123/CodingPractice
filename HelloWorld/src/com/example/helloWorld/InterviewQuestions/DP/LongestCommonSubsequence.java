@@ -1,4 +1,4 @@
-package com.example.helloWorld.InterviewQuestions;
+package com.example.helloWorld.InterviewQuestions.DP;
 
 public class LongestCommonSubsequence {
     public static void main(String[] args) {

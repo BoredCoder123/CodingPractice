@@ -1,4 +1,4 @@
-package com.example.helloWorld.InterviewQuestions;
+package com.example.helloWorld.InterviewQuestions.DP;
 
 import java.util.ArrayList;
 import java.util.List;

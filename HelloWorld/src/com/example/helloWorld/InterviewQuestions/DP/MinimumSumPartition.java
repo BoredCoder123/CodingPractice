@@ -1,4 +1,4 @@
-package com.example.helloWorld.InterviewQuestions;
+package com.example.helloWorld.InterviewQuestions.DP;
 
 public class MinimumSumPartition {
     public static void main(String[] args) {
