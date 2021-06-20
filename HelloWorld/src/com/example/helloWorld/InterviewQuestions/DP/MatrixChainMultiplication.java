@@ -17,7 +17,7 @@ public class MatrixChainMultiplication {
                 if(j==n)
                     continue;
                 dp[i][j]=Integer.MAX_VALUE;
-                for(k=i;k<=j-1;k++){
+                for(k=i;k<=j-1;k++){        //Minimum value of all the matrices between i and j
                     q=dp[i][k]+dp[k+1][j]+arr[i-1]*arr[k]*arr[j];
                     dp[i][j]=Math.min(dp[i][j],q);
                 }
