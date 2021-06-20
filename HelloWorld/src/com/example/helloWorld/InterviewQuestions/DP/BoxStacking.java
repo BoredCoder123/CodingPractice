@@ -13,7 +13,7 @@ public class BoxStacking {
     }
 
     private static int boxStacking(Box[] arr) {
-        int n=arr.length, i, j, k;
+        int n=arr.length, i, j;
         Box[] rot = new Box[n*3];
         for(i=0;i<n;i++){
             Box box = arr[i];
@@ -24,9 +24,9 @@ public class BoxStacking {
         Arrays.sort(rot);
         int c=3*n;
         int[] msh = new int[c];
-        for(i=0;i<c;i++){
-            msh[i]=rot[i].h;
-        }
+//        for(i=0;i<c;i++){
+//            msh[i]=rot[i].h;
+//        }
         for(i=0;i<c;i++){
             msh[i]=0;
             Box box= rot[i];
